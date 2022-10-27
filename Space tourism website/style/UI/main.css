@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Saira+Condensed:wght@200&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0; }
+
+.img-background {
+  width: 98.9vw; }
+
+.icone {
+  position: absolute;
+  color: aliceblue;
+  top: 4%;
+  left: 4%;
+  font-size: 3rem;
+  z-index: 3;
+  position: fixed; }
+
+.logo {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  z-index: 3;
+  position: fixed; }
+
+.navbar-list {
+  position: absolute;
+  top: 0%;
+  display: block;
+  z-index: 2;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  height: 15%;
+  color: aliceblue;
+  background-color: transparent;
+  overflow: auto;
+  position: fixed; }
+  .navbar-list li {
+    list-style: none;
+    display: flex;
+    float: left;
+    padding: 2%;
+    position: relative;
+    left: 48%; }
+  .navbar-list a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-family: "Noto Serif", serif; }
+  .navbar-list a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    transition: .3s;
+    position: relative;
+    top: 10px; }
+  .navbar-list a:hover::after {
+    width: 100%; }
+  .navbar-list a:hover {
+    color: whitesmoke; }
+
+.title {
+  font-family: "Bellefair", serif;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  color: whitesmoke; }
+  .title .first-line {
+    font-size: 2rem; }
+  .title h1 {
+    font-size: 10rem; }
+
+.circle {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  width: 15%;
+  height: 30%;
+  left: 65%;
+  border-radius: 50%;
+  background-color: whitesmoke; }
+  .circle span {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 2rem; }
+
+.circle {
+  box-shadow: 0 0 0 3px white;
+  overflow: hidden;
+  -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  -moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer; }
+
+.circle:after {
+  display: none; }
+
+.circle:hover {
+  background: white;
+  box-shadow: 0 0 0 50px rgba(153, 152, 152, 0.968); }
+
+.circle:hover:before {
+  -webkit-animation: toRightFromLeft 0.3s forwards;
+  -moz-animation: toRightFromLeft 0.3s forwards;
+  animation: toRightFromLeft 0.3s forwards; }
+
+@-webkit-keyframes toRightFromLeft {
+  49% {
+    -webkit-transform: translate(100%); }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-100%); }
+  51% {
+    opacity: 1; } }
+@-moz-keyframes toRightFromLeft {
+  49% {
+    -moz-transform: translate(100%); }
+  50% {
+    opacity: 0;
+    -moz-transform: translate(-100%); }
+  51% {
+    opacity: 1; } }
+@keyframes toRightFromLeft {
+  49% {
+    transform: translate(100%); }
+  50% {
+    opacity: 0;
+    transform: translate(-100%); }
+  51% {
+    opacity: 1; } }
+.DESTINATON--background img {
+  width: 98.9vw; }
+.DESTINATON--left--title {
+  position: absolute;
+  z-index: 10;
+  top: 26%;
+  color: whitesmoke;
+  font-family: "Noto Serif", serif;
+  left: 11%;
+  font-size: 1.5rem; }
+  .DESTINATON--left--title span {
+    color: gray; }
+.DESTINATON--left--image {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 15%; }
+.DESTINATON--right {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  width: 35%;
+  font-family: "Bellefair", serif;
+  color: whitesmoke; }
+  .DESTINATON--right--navbar--list {
+    display: flex; }
+    .DESTINATON--right--navbar--list--item {
+      float: left;
+      list-style: none;
+      padding-inline: 5%;
+      color: whitesmoke;
+      cursor: pointer; }
+    .DESTINATON--right--navbar--list--item::after {
+      content: '';
+      height: 2px;
+      width: 0;
+      display: block;
+      background: whitesmoke;
+      transition: .3s;
+      position: relative;
+      top: 10%;
+      z-index: 10; }
+    .DESTINATON--right--navbar--list--item:hover::after {
+      width: 100%; }
+  .DESTINATON--right--title {
+    font-size: 7rem;
+    padding-inline: 15%; }
+  .DESTINATON--right--main {
+    font-size: 1.5rem;
+    padding-block: 5%; }
+  .DESTINATON--right--footer {
+    padding: 5%;
+    font-size: small; }
+    .DESTINATON--right--footer--AVGdistanceNumber {
+      font-size: 1.5rem; }
+    .DESTINATON--right--footer--ESTtimeNumber {
+      font-size: 1.5rem; }
+
+.CREW--background img {
+  width: 98.9vw; }
+.CREW--left {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  width: 50%;
+  color: whitesmoke; }
+  .CREW--left--title {
+    font-size: 1.5rem;
+    padding-bottom: 10%; }
+  .CREW--left span {
+    color: grey; }
+  .CREW--left--titleName {
+    font-size: 2.5rem;
+    color: gray; }
+  .CREW--left--Name {
+    font-size: 4rem;
+    padding-bottom: 5%; }
+  .CREW--left--main {
+    width: 75%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: larger;
+    padding-bottom: 5%; }
+  .CREW--left--navbar--list {
+    display: flex; }
+    .CREW--left--navbar--list--item {
+      width: 1.5vw;
+      height: 3vh;
+      background-color: gray;
+      border-radius: 50%;
+      list-style: none;
+      margin: 30px;
+      cursor: pointer; }
+    .CREW--left--navbar--list--item:hover {
+      background-color: whitesmoke; }
+.CREW--right {
+  position: absolute;
+  top: 20%;
+  right: 8%; }
+
+.TECHNOLOGY--background img {
+  width: 98.9vw; }
+.TECHNOLOGY--left {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  width: 50%;
+  color: whitesmoke; }
+  .TECHNOLOGY--left--title {
+    font-size: 1.5rem;
+    padding-bottom: 10%; }
+  .TECHNOLOGY--left span {
+    color: grey; }
+  .TECHNOLOGY--left--titleName {
+    font-size: 1rem;
+    color: #ded5d5;
+    padding-bottom: 2%; }
+  .TECHNOLOGY--left--Name {
+    font-size: 4rem;
+    padding-bottom: 5%; }
+  .TECHNOLOGY--left--main {
+    width: 75%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: larger;
+    padding-bottom: 5%; }
+  .TECHNOLOGY--left--navbar--list {
+    position: absolute;
+    top: 15%;
+    left: -20%; }
+    .TECHNOLOGY--left--navbar--list--item {
+      width: 5vw;
+      height: 9.5vh;
+      background-color: transparent;
+      border: 2px solid whitesmoke;
+      border-radius: 50%;
+      list-style: none;
+      margin: 30px;
+      cursor: pointer;
+      font-size: 3rem; }
+    .TECHNOLOGY--left--navbar--list--item:hover {
+      background-color: whitesmoke;
+      color: black; }
+.TECHNOLOGY--right {
+  position: absolute;
+  top: 20%;
+  right: 8%; }
+
+/*# sourceMappingURL=main.css.map */

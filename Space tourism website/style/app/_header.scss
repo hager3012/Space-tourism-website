@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+.img-background{
+    width: 98.9vw;
+}
+.icone{
+    position: absolute;
+    color: aliceblue;
+    top: 4%;
+    left: 4%;
+    font-size: 3rem;
+    z-index: 3;
+    position: fixed;
+}
+.logo{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    z-index: 3;
+    position: fixed;
+}
+.navbar-list{
+    position: absolute;
+    top: 0%;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    height: 15%;
+    color: aliceblue;
+    background-color: transparent;
+    overflow: auto;
+    position: fixed;
+    li{
+        list-style: none;
+        display: flex;
+        float: left;
+        padding: 2%;
+        position: relative;
+        left: 48%;
+    }
+    a{
+        text-decoration: none;
+        color: $color-whitsmook;
+        font-size: 1.2rem;
+        font-family: $font-NotoSerif;
+    }
+    a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $color-whitsmook;
+        transition:  .3s;
+        position: relative;
+        top: 10px;
+    }
+    a:hover::after{
+        width: 100%;
+    }
+    a:hover{
+        color: $color-whitsmook;
+    }
+}
+.title{
+    font-family: $font-Bellefair;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color: $color-whitsmook;
+    .first-line{
+         font-size: 2rem;
+        
+    }
+    h1{
+         font-size: 10rem;
+        
+    }
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    width: 15%;
+    height: 30%;
+    left: 65%;
+    border-radius: 50%;
+    background-color: $color-whitsmook;
+    span{
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        font-size: 2rem;
+    }
+}
+.circle {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255,1);
+    overflow: hidden;
+    -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    -moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.circle:after {
+    display: none;
+}
+.circle:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 50px rgba(153, 152, 152, 0.968);
+}
+
+.circle:hover:before {
+    -webkit-animation: toRightFromLeft 0.3s forwards;
+    -moz-animation: toRightFromLeft 0.3s forwards;
+    animation: toRightFromLeft 0.3s forwards;
+}
+@-webkit-keyframes toRightFromLeft {
+    49% {
+        -webkit-transform: translate(100%);
+    }
+    50% {
+         opacity: 0;
+        -webkit-transform: translate(-100%);
+    }
+    51% {
+         opacity: 1;
+    }
+}
+@-moz-keyframes toRightFromLeft {
+    49% {
+        -moz-transform: translate(100%);
+    }
+    50% {
+         opacity: 0;
+        -moz-transform: translate(-100%);
+    }
+    51% {
+         opacity: 1;
+    }
+}
+@keyframes toRightFromLeft {
+    49% {
+        transform: translate(100%);
+    }
+    50% {
+         opacity: 0;
+        transform: translate(-100%);
+    }
+    51% {
+         opacity: 1;
+    }
+}

@@ -1,0 +1,77 @@
+.DESTINATON{
+    &--background img{
+    width: 98.9vw;
+    }
+    &--left{
+        &--title{
+            position: absolute;
+            z-index: 10;
+            top: 26%;
+            color: $color-whitsmook;
+            font-family: $font-NotoSerif;
+            left: 11%;
+            font-size: 1.5rem;
+            & span{
+                color: gray;
+            }
+        }
+        &--image{
+            position: absolute;
+            z-index: 10;
+            top: 40%;
+            left: 15%;
+        }
+    }
+    &--right{
+            position: absolute;
+            top: 35%;
+            right: 10%;
+            width: 35%;
+        &--navbar{
+            &--list{
+                display: flex;
+                &--item{
+                   float: left;
+                   list-style: none;
+                   padding-inline: 5%;
+                   color: $color-whitsmook;
+                   cursor: pointer;
+                }
+                &--item::after{
+                    content: '';
+                    height: 2px;
+                    width:0;
+                    display: block;
+                    background: $color-whitsmook;
+                    transition:  .3s;
+                    position: relative;
+                    top: 10%;
+                    z-index: 10;
+                }
+                &--item:hover::after{
+                    width: 100%;
+                }
+               }
+        }
+        font-family: $font-Bellefair;
+        color: $color-whitsmook;
+        &--title{
+            font-size: 7rem;
+            padding-inline: 15%;
+        }
+        &--main{
+            font-size: 1.5rem;
+            padding-block:5% ;
+        }
+        &--footer{
+            padding:5% ;
+            font-size: small;
+           &--AVGdistanceNumber{
+            font-size: 1.5rem
+           }
+           &--ESTtimeNumber{
+            font-size: 1.5rem;
+           }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.TECHNOLOGY{
+    &--background img{
+        width: 98.9vw;
+        }
+        &--left{
+            position: absolute;
+            top: 30%;
+            left: 13%;
+            width: 50%;
+            color: $color-whitsmook;
+            &--title{
+                
+                font-size: 1.5rem;
+                padding-bottom: 10%;
+            }
+            span{
+                color: grey;
+            }
+            &--titleName{
+                font-size: 1rem;
+                color: rgb(222, 213, 213);
+                padding-bottom: 2%;
+            }
+            &--Name{
+                font-size: 4rem;
+                padding-bottom: 5%;
+            }
+            &--main{
+                width: 75%;
+                font-family: "Barlow Condensed", sans-serif;
+                font-size: larger;
+                padding-bottom: 5%;
+            }
+            &--navbar{
+                &--list{
+                    position: absolute;
+                    top: 15%;
+                    left: -20%;
+                    &--item{
+                        width: 5vw;
+                        height: 9.5vh;
+                        background-color: transparent;
+                        border: 2px solid $color-whitsmook;
+                        border-radius: 50%;
+                        list-style: none; 
+                        margin: 30px;
+                        cursor: pointer;
+                        font-size: 3rem;
+                    }
+                    &--item:hover{
+                        background-color: $color-whitsmook;
+                        color: black;
+                    }
+                }
+            }
+            
+        } 
+       &--right {
+        position: absolute;
+        top: 20%;
+        right: 8%;
+       }      
+}

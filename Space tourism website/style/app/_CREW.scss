@@ -1,0 +1,58 @@
+.CREW{
+    &--background img{
+        width: 98.9vw;
+        }
+    &--left{
+        position: absolute;
+        top: 30%;
+        left: 13%;
+        width: 50%;
+        color: $color-whitsmook;
+        &--title{
+            
+            font-size: 1.5rem;
+            padding-bottom: 10%;
+        }
+        span{
+            color: grey;
+        }
+        &--titleName{
+            font-size: 2.5rem;
+            color: gray;
+        }
+        &--Name{
+            font-size: 4rem;
+            padding-bottom: 5%;
+        }
+        &--main{
+            width: 75%;
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: larger;
+            padding-bottom: 5%;
+        }
+        &--navbar{
+            &--list{
+                display: flex;
+                &--item{
+                    width: 1.5vw;
+                    height: 3vh;
+                    background-color: gray;
+                    border-radius: 50%;
+                    list-style: none; 
+                    margin: 30px;
+                    cursor: pointer;
+                }
+                &--item:hover{
+                    background-color: $color-whitsmook;
+                }
+            }
+        }
+        
+    } 
+   &--right {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+   }  
+    
+}
